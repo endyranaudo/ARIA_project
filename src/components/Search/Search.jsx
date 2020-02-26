@@ -4,7 +4,7 @@ import './Search.css';
 const Search = () => {
   return (
     <div className="search-box">
-      <form id="search" role="search">
+      <form id="search">
         {/* <label for="search-input">Search this site</label> */}
         <input
           type="search"

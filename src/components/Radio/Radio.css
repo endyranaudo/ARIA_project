@@ -1,0 +1,21 @@
+.input-box {
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: space-around;
+}
+
+label {
+  margin-right: 1rem;
+  display: inline;
+}
+
+input {
+  margin-right: 1rem;
+  display: inline;
+
+}
+
+.block {
+  text-align: center;
+  margin: 2rem 0;
+}

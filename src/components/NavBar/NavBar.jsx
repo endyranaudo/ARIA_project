@@ -2,12 +2,13 @@ import React from 'react';
 import '../NavBar/NavBar.css';
 
 const NavBar = () => {
+
   return (
     <div>
       <div className="navbar-wrapper">
         <div className="logo-left">
           <h1>
-            <a id="logo" href="/">
+            <a id="logo" href="/" tabIndex="0">
               Accessibility Project
             </a>
           </h1>
@@ -24,19 +25,16 @@ const NavBar = () => {
               <li role="listitem">
                 <a href="#">Articles</a>
               </li>
-              <li role="listitem">
-                <div class="dropdown">
-                  <span> Contacts </span>
-                  <ul class="dropdown-content">
-                    <li>
-                      <a href="#">Where</a>
-                    </li>
-                    <li>
-                      <a href="#">Contact us</a>
-                    </li>
-                    <p></p>
-                  </ul>
-                </div>
+              <li role="list" class="dropdown" aria-haspopup="false">
+                <a href="">Contacts</a>
+                <li class="dropdown-content">
+                  <li role="listitem">
+                    <a href="#">Where</a>
+                  </li>
+                  <li role="listitem">
+                    <a href="#">Contact us</a>
+                  </li>
+                </li>
               </li>
             </ul>
           </nav>

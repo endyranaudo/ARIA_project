@@ -5,22 +5,36 @@ import SecondArticle from './components/SecondArticle/SecondArticle';
 import Tab from './components/Tab/Tab';
 import '../src/App.css';
 import Search from './components/Search/Search';
+import Radio from './components/Radio/Radio';
 
 const App = () => {
   return (
-    <div>
+    <>
       <NavBar />
       <div className="wrapper">
-        <Search />
+        <section>
+          <Search />
+        </section>
+
         <main role="main">
           <h2 className="section-title">Latest articles</h2>
           <MainArticle />
           <SecondArticle />
         </main>
+
         <section>
-          <h2 className="section-title">People to contact</h2>
+          <h2 className="section-title">
+            Tab Elements <span aria-hidden="true">-</span> Our team
+          </h2>
           <Tab />
         </section>
+
+        <aside>
+          <h2 className="section-title">
+            Radio Elements <span aria-hidden="true">-</span> Contact Preferences
+          </h2>
+          <Radio />
+        </aside>
       </div>
       <footer role="contentinfo">
         <div>
@@ -28,7 +42,7 @@ const App = () => {
           <p>Created by Snook ©2020</p>
         </div>
       </footer>
-    </div>
+    </>
   );
 };
 
