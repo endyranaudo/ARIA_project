@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import NavBar from './components/NavBar/NavBar';
+import MainArticle from './components/MainArticle/MainArticle';
+import SecondArticle from './components/SecondArticle/SecondArticle';
+import Tab from './components/Tab/Tab';
+import '../src/App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar />
+      <div className="wrapper">
+        <main role="main">
+          <h2 className="section-title">Latest articles</h2>
+          <MainArticle />
+          <SecondArticle />
+        </main>
+        <aside role="complementary"></aside>
+        <section>
+          <h2 className="section-title">People to contact</h2>
+          <Tab />
+        </section>
+      </div>
+      <footer role="contentinfo">
+        <div>
+          <p>Accessible React App</p>
+          <p>Created by Snook ©2020</p>
+        </div>
+      </footer>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  background-color: rgb(127,255,212, 0.3);
+  /* max-width: 50%; */
+  
+}
+
+#top-article {
+  padding: 20px;
+}
+
+#article h2 {
+  margin-bottom: 16px;
+}
+
+img{
+  width: 30%;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-div {
+  text-align: right;
+  /* background-color: darkorange; */
+}

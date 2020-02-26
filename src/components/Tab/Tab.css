@@ -1,0 +1,18 @@
+.main-table {
+  width: 80%;
+  text-align: center;
+  margin: 32px auto;
+}
+.tab-all {
+  margin: 32px auto;
+}
+
+th {
+  background-color: thistle;
+  padding: 1rem 0;
+}
+
+td {
+  background-color: rgba(165, 165, 165, 0.3);
+  padding: 1rem 0;
+}
