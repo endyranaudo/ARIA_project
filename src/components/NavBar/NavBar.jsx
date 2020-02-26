@@ -6,7 +6,11 @@ const NavBar = () => {
     <div>
       <div className="navbar-wrapper">
         <div className="logo-left">
-          <a id="logo" href="/">Accessibility Project</a>
+          <h1>
+            <a id="logo" href="/">
+              Accessibility Project
+            </a>
+          </h1>
         </div>
         <div className="navbar-right">
           <nav role="navigation" aria-label="menu">
@@ -21,7 +25,18 @@ const NavBar = () => {
                 <a href="#">Articles</a>
               </li>
               <li role="listitem">
-                <a href="#">Contacts</a>
+                <div class="dropdown">
+                  <span> Contacts </span>
+                  <ul class="dropdown-content">
+                    <li>
+                      <a href="#">Where</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact us</a>
+                    </li>
+                    <p></p>
+                  </ul>
+                </div>
               </li>
             </ul>
           </nav>
